@@ -7,12 +7,6 @@ import Notification from "../Notification/Notification";
 import range from "../data/range.json";
 
 class Feedback extends Component {
-  state = {
-    good: 0,
-    neutral: 0,
-    bad: 0,
-  };
-
   static propTypes = {
     good: PropTypes.number.isRequired,
     neutral: PropTypes.number.isRequired,
@@ -20,6 +14,12 @@ class Feedback extends Component {
   };
 
   static defaultProps = {
+    good: 0,
+    neutral: 0,
+    bad: 0,
+  };
+
+  state = {
     good: 0,
     neutral: 0,
     bad: 0,
